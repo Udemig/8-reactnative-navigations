@@ -1,10 +1,20 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-const Notifications = () => {
+const Notifications = ({route, navigation}) => {
+  console.log(route);
   return (
     <View>
-      <Text>Notifications</Text>
+      <Text>{route?.params?.title}</Text>
+      <TouchableOpacity
+        onPress={() => navigation.goBack()}
+        style={{
+          backgroundColor: 'green',
+          padding: 10,
+          borderRadius: 10,
+          marginTop: 15,
+        }}>
+        <Text>Bir screen geri git</Text>
+      </TouchableOpacity>
     </View>
   );
 };

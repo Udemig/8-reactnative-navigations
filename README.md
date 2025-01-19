@@ -7,4 +7,18 @@
 
 - npm install @react-navigation/native-stack@^6.x
 - cd ios -- pod install
-# 8-reactnative-navigations
+
+# iconsax
+
+- npm i iconsax-react-native
+- cd ios -- pod install
+
+## 2) BottomTabs
+
+- npm install @react-navigation/bottom-tabs@^6.x
+- cd ios -- pod install
+
+## 3) Drawer
+
+- npm install @react-navigation/drawer@^6.x
+- cd ios -- pod install
